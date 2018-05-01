@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseAuth
 
 class AuthVC: UIViewController {
 
@@ -14,6 +16,14 @@ class AuthVC: UIViewController {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        if Auth.auth().currentUser != nil {
+            dismiss(animated: true, completion: nil)
+        }
     }
 
     override func didReceiveMemoryWarning() {
