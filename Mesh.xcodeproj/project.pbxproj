@@ -30,6 +30,7 @@
 		67AE47832098E766002587EB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE47822098E766002587EB /* Message.swift */; };
 		67AE47852098EEBF002587EB /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE47842098EEBF002587EB /* FeedCell.swift */; };
 		67AE4787209917C8002587EB /* CreateGroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE4786209917C8002587EB /* CreateGroupsVC.swift */; };
+		67AE478920994E60002587EB /* UserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67AE478820994E60002587EB /* UserCell.swift */; };
 		A8E8C2555B50242DF0DC5052 /* Pods_MeshUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7C199F950098E5DCE82AA174 /* Pods_MeshUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -80,6 +81,7 @@
 		67AE47822098E766002587EB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
 		67AE47842098EEBF002587EB /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
 		67AE4786209917C8002587EB /* CreateGroupsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateGroupsVC.swift; sourceTree = "<group>"; };
+		67AE478820994E60002587EB /* UserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserCell.swift; sourceTree = "<group>"; };
 		7C199F950098E5DCE82AA174 /* Pods_MeshUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_MeshUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C3F6B18F6207E95BBA885D /* Pods_Mesh.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Mesh.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		97EB0FC6D6FF781E916C7BCC /* Pods-Mesh.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesh.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Mesh/Pods-Mesh.debug.xcconfig"; sourceTree = "<group>"; };
@@ -208,6 +210,7 @@
 				6778DE1A2097DA86007D7F9B /* InsetTextField.swift */,
 				6778DE1C2097DE45007D7F9B /* ShadowView.swift */,
 				67AE47842098EEBF002587EB /* FeedCell.swift */,
+				67AE478820994E60002587EB /* UserCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -555,6 +558,7 @@
 				6778DE1F2097E042007D7F9B /* AuthService.swift in Sources */,
 				6778DDDE2097C356007D7F9B /* AppDelegate.swift in Sources */,
 				67AE4787209917C8002587EB /* CreateGroupsVC.swift in Sources */,
+				67AE478920994E60002587EB /* UserCell.swift in Sources */,
 				67AE47852098EEBF002587EB /* FeedCell.swift in Sources */,
 				6778DE1D2097DE45007D7F9B /* ShadowView.swift in Sources */,
 				6778DE23209840AE007D7F9B /* CreatePostVC.swift in Sources */,

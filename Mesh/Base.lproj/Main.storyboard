@@ -486,16 +486,16 @@
                                 </constraints>
                             </view>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="xT7-Yg-9KA">
-                                <rect key="frame" x="0.0" y="130" width="375" height="648"/>
+                                <rect key="frame" x="10" y="130" width="355" height="648"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="TITLE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gui-gB-JYL">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="18.666666666666668"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="18.666666666666668"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="add a title" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="YrE-Xe-ksP" customClass="InsetTextField" customModule="Mesh" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="23.666666666666657" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="23.666666666666657" width="355" height="40"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="CTh-5t-pIV"/>
@@ -505,13 +505,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x4M-AI-VMz">
-                                        <rect key="frame" x="0.0" y="68.666666666666657" width="375" height="18.666666666666671"/>
+                                        <rect key="frame" x="0.0" y="68.666666666666657" width="355" height="18.666666666666671"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                         <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="add a description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vNU-vd-vuX" customClass="InsetTextField" customModule="Mesh" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="92.333333333333343" width="375" height="40"/>
+                                        <rect key="frame" x="0.0" y="92.333333333333343" width="355" height="40"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="40" id="FUw-JB-wMd"/>
@@ -521,13 +521,13 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Add people to your group:" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NRi-LJ-eCg">
-                                        <rect key="frame" x="0.0" y="137.33333333333331" width="375" height="20"/>
+                                        <rect key="frame" x="0.0" y="137.33333333333331" width="355" height="20"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="17"/>
                                         <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="add other emails" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="E9h-H7-QeQ" customClass="InsetTextField" customModule="Mesh" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="162.33333333333331" width="375" height="60"/>
+                                        <rect key="frame" x="0.0" y="162.33333333333331" width="355" height="60"/>
                                         <color key="backgroundColor" cocoaTouchSystemColor="viewFlipsideBackgroundColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="60" id="c6r-tj-0qb"/>
@@ -536,18 +536,53 @@
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
-                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Qy-ML-aua">
-                                        <rect key="frame" x="0.0" y="227.33333333333329" width="375" height="420.66666666666674"/>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="60" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="4Qy-ML-aua">
+                                        <rect key="frame" x="0.0" y="227.33333333333329" width="355" height="420.66666666666674"/>
                                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                         <prototypes>
-                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="lza-MT-0IG">
-                                                <rect key="frame" x="0.0" y="28" width="375" height="44"/>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" restorationIdentifier="userCell" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="userCell" rowHeight="60" id="lza-MT-0IG" customClass="UserCell" customModule="Mesh" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="355" height="60"/>
                                                 <autoresizingMask key="autoresizingMask"/>
                                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="lza-MT-0IG" id="DiO-k3-lhl">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                                                    <rect key="frame" x="0.0" y="0.0" width="355" height="60"/>
                                                     <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="defaultProfileImage" translatesAutoresizingMaskIntoConstraints="NO" id="wGA-E2-TRi">
+                                                            <rect key="frame" x="10" y="6" width="44" height="44"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="44" id="p7X-R2-7ci"/>
+                                                                <constraint firstAttribute="width" constant="44" id="wgd-rK-x0R"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="oux-gd-cq9">
+                                                            <rect key="frame" x="329" y="21" width="21" height="18"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="uaA-Hj-2qu">
+                                                            <rect key="frame" x="62" y="19" width="251" height="21"/>
+                                                            <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
+                                                            <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="uaA-Hj-2qu" firstAttribute="centerX" secondItem="DiO-k3-lhl" secondAttribute="centerX" id="7ll-gk-dA6"/>
+                                                        <constraint firstAttribute="bottom" secondItem="wGA-E2-TRi" secondAttribute="bottom" constant="10" id="Pmi-Ff-RzF"/>
+                                                        <constraint firstItem="uaA-Hj-2qu" firstAttribute="top" secondItem="DiO-k3-lhl" secondAttribute="topMargin" constant="8" id="QKY-IE-wlN"/>
+                                                        <constraint firstItem="uaA-Hj-2qu" firstAttribute="leading" secondItem="wGA-E2-TRi" secondAttribute="trailing" constant="8" id="ZtO-5V-mIR"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="uaA-Hj-2qu" secondAttribute="bottom" constant="9" id="eNH-T4-p7A"/>
+                                                        <constraint firstItem="wGA-E2-TRi" firstAttribute="leading" secondItem="DiO-k3-lhl" secondAttribute="leading" constant="10" id="l2g-rc-WGq"/>
+                                                        <constraint firstAttribute="bottomMargin" secondItem="oux-gd-cq9" secondAttribute="bottom" constant="10" id="mGf-Ej-iIH"/>
+                                                        <constraint firstItem="oux-gd-cq9" firstAttribute="leading" secondItem="uaA-Hj-2qu" secondAttribute="trailing" constant="16" id="o54-qa-NAa"/>
+                                                        <constraint firstItem="oux-gd-cq9" firstAttribute="top" secondItem="DiO-k3-lhl" secondAttribute="topMargin" constant="10" id="o7o-oC-RrW"/>
+                                                        <constraint firstItem="oux-gd-cq9" firstAttribute="trailing" secondItem="DiO-k3-lhl" secondAttribute="trailingMargin" constant="-10" id="sVe-8P-V5S"/>
+                                                    </constraints>
                                                 </tableViewCellContentView>
-                                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.23044162330000001" green="0.25404188370000003" blue="0.28545464409999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <connections>
+                                                    <outlet property="checkImage" destination="oux-gd-cq9" id="hwq-Sb-yry"/>
+                                                    <outlet property="emailLbl" destination="uaA-Hj-2qu" id="BHX-Uc-DyG"/>
+                                                    <outlet property="profileImage" destination="wGA-E2-TRi" id="jfY-Zq-iWH"/>
+                                                </connections>
                                             </tableViewCell>
                                         </prototypes>
                                     </tableView>
@@ -561,8 +596,8 @@
                             <constraint firstItem="xT7-Yg-9KA" firstAttribute="top" secondItem="FwV-WE-Ih4" secondAttribute="bottom" constant="20" id="Jj8-yC-a1R"/>
                             <constraint firstItem="6df-Hw-wX7" firstAttribute="bottom" secondItem="xT7-Yg-9KA" secondAttribute="bottom" id="Mbi-cp-01y"/>
                             <constraint firstItem="FwV-WE-Ih4" firstAttribute="leading" secondItem="6df-Hw-wX7" secondAttribute="leading" id="aMZ-8z-H9b"/>
-                            <constraint firstItem="6df-Hw-wX7" firstAttribute="trailing" secondItem="xT7-Yg-9KA" secondAttribute="trailing" id="fg2-HM-foV"/>
-                            <constraint firstItem="xT7-Yg-9KA" firstAttribute="leading" secondItem="6df-Hw-wX7" secondAttribute="leading" id="mvJ-pO-Em6"/>
+                            <constraint firstItem="6df-Hw-wX7" firstAttribute="trailing" secondItem="xT7-Yg-9KA" secondAttribute="trailing" constant="10" id="fg2-HM-foV"/>
+                            <constraint firstItem="xT7-Yg-9KA" firstAttribute="leading" secondItem="6df-Hw-wX7" secondAttribute="leading" constant="10" id="mvJ-pO-Em6"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6df-Hw-wX7"/>
                     </view>
@@ -577,7 +612,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q92-Vg-IQc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1617" y="678"/>
+            <point key="canvasLocation" x="1616.8" y="677.58620689655174"/>
         </scene>
         <!--AuthVC-->
         <scene sceneID="iCX-9b-z0p">
@@ -797,6 +832,7 @@
         <image name="logoutIcon" width="19" height="21"/>
         <image name="me-tabIcon" width="25" height="25"/>
         <image name="send" width="29" height="29"/>
+        <image name="whiteCheckmark" width="18" height="14"/>
     </resources>
     <color key="tintColor" red="0.015686274509803921" green="0.6705882352941176" blue="0.77254901960784317" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
 </document>
