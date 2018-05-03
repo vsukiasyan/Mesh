@@ -11,6 +11,8 @@
 		323E98B4DE0B4EF72170299D /* Pods_Mesh.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84C3F6B18F6207E95BBA885D /* Pods_Mesh.framework */; };
 		674475E5209A8E8400524FB7 /* GroupCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674475E4209A8E8400524FB7 /* GroupCell.swift */; };
 		674475E7209AADF200524FB7 /* Group.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674475E6209AADF200524FB7 /* Group.swift */; };
+		674475E9209ACB6B00524FB7 /* GroupFeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674475E8209ACB6B00524FB7 /* GroupFeedCell.swift */; };
+		674475EB209ACBDD00524FB7 /* GroupFeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 674475EA209ACBDD00524FB7 /* GroupFeedVC.swift */; };
 		6778DDDE2097C356007D7F9B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DDDD2097C356007D7F9B /* AppDelegate.swift */; };
 		6778DDE02097C356007D7F9B /* FeedVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DDDF2097C356007D7F9B /* FeedVC.swift */; };
 		6778DDE22097C356007D7F9B /* GroupsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6778DDE12097C356007D7F9B /* GroupsVC.swift */; };
@@ -58,6 +60,8 @@
 		5FB079EF537E92065FB4C6A6 /* Pods-Mesh.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Mesh.release.xcconfig"; path = "Pods/Target Support Files/Pods-Mesh/Pods-Mesh.release.xcconfig"; sourceTree = "<group>"; };
 		674475E4209A8E8400524FB7 /* GroupCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupCell.swift; sourceTree = "<group>"; };
 		674475E6209AADF200524FB7 /* Group.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Group.swift; sourceTree = "<group>"; };
+		674475E8209ACB6B00524FB7 /* GroupFeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedCell.swift; sourceTree = "<group>"; };
+		674475EA209ACBDD00524FB7 /* GroupFeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupFeedVC.swift; sourceTree = "<group>"; };
 		6778DDDA2097C356007D7F9B /* Mesh.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mesh.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6778DDDD2097C356007D7F9B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6778DDDF2097C356007D7F9B /* FeedVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedVC.swift; sourceTree = "<group>"; };
@@ -204,6 +208,7 @@
 				6778DE2020983A8E007D7F9B /* MeVC.swift */,
 				6778DE22209840AE007D7F9B /* CreatePostVC.swift */,
 				67AE4786209917C8002587EB /* CreateGroupsVC.swift */,
+				674475EA209ACBDD00524FB7 /* GroupFeedVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -216,6 +221,7 @@
 				67AE47842098EEBF002587EB /* FeedCell.swift */,
 				67AE478820994E60002587EB /* UserCell.swift */,
 				674475E4209A8E8400524FB7 /* GroupCell.swift */,
+				674475E8209ACB6B00524FB7 /* GroupFeedCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -562,6 +568,8 @@
 				674475E5209A8E8400524FB7 /* GroupCell.swift in Sources */,
 				6778DDE22097C356007D7F9B /* GroupsVC.swift in Sources */,
 				6778DE192097DA23007D7F9B /* LoginVC.swift in Sources */,
+				674475EB209ACBDD00524FB7 /* GroupFeedVC.swift in Sources */,
+				674475E9209ACB6B00524FB7 /* GroupFeedCell.swift in Sources */,
 				6778DE1F2097E042007D7F9B /* AuthService.swift in Sources */,
 				6778DDDE2097C356007D7F9B /* AppDelegate.swift in Sources */,
 				67AE4787209917C8002587EB /* CreateGroupsVC.swift in Sources */,
