@@ -479,7 +479,7 @@
         <!--Group FeedVC-->
         <scene sceneID="TW1-5p-OfS">
             <objects>
-                <viewController id="b6F-d2-Y2n" customClass="GroupFeedVC" customModule="Mesh" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="GroupFeedVC" id="b6F-d2-Y2n" customClass="GroupFeedVC" customModule="Mesh" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3gh-n0-Yws">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
