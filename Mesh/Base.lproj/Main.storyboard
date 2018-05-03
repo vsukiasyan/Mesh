@@ -14,6 +14,10 @@
         <array key="AvenirNext.ttc">
             <string>AvenirNext-Regular</string>
         </array>
+        <array key="HelveticaNeue.ttc">
+            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
+        </array>
         <array key="Menlo.ttc">
             <string>Menlo-Regular</string>
         </array>
@@ -404,13 +408,49 @@
                                 <rect key="frame" x="0.0" y="110" width="375" height="619"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="100" id="Q9e-df-kOS">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="groupCell" rowHeight="100" id="Q9e-df-kOS" customClass="GroupCell" customModule="Mesh" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="375" height="100"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Q9e-df-kOS" id="y3M-Ug-PXQ">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="99.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cY-EH-4Sm">
+                                                    <rect key="frame" x="15" y="11" width="95" height="21"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="18"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Group Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4FI-Cs-z7J">
+                                                    <rect key="frame" x="31" y="40" width="329" height="16.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Members" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0J0-lQ-kqq">
+                                                    <rect key="frame" x="31" y="64.333333333333329" width="329" height="16.333333333333329"/>
+                                                    <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="14"/>
+                                                    <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="0J0-lQ-kqq" secondAttribute="trailing" id="146-ZY-tMD"/>
+                                                <constraint firstItem="0J0-lQ-kqq" firstAttribute="top" secondItem="4FI-Cs-z7J" secondAttribute="bottom" constant="8" id="9Pt-PE-a4J"/>
+                                                <constraint firstItem="4FI-Cs-z7J" firstAttribute="top" secondItem="0cY-EH-4Sm" secondAttribute="bottom" constant="8" id="IE9-sf-lWq"/>
+                                                <constraint firstItem="0J0-lQ-kqq" firstAttribute="leading" secondItem="y3M-Ug-PXQ" secondAttribute="leadingMargin" constant="16" id="TIa-jX-Ypn"/>
+                                                <constraint firstItem="4FI-Cs-z7J" firstAttribute="leading" secondItem="y3M-Ug-PXQ" secondAttribute="leadingMargin" constant="16" id="jXf-39-Xu8"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="4FI-Cs-z7J" secondAttribute="trailing" id="l58-wi-WWd"/>
+                                                <constraint firstItem="0cY-EH-4Sm" firstAttribute="top" secondItem="y3M-Ug-PXQ" secondAttribute="topMargin" id="oMQ-a5-eEt"/>
+                                                <constraint firstItem="0cY-EH-4Sm" firstAttribute="leading" secondItem="y3M-Ug-PXQ" secondAttribute="leadingMargin" id="uOL-Gp-Kfv"/>
+                                            </constraints>
                                         </tableViewCellContentView>
+                                        <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        <connections>
+                                            <outlet property="groupDescLbl" destination="4FI-Cs-z7J" id="T2H-uP-132"/>
+                                            <outlet property="groupTitleLbl" destination="0cY-EH-4Sm" id="JPt-7X-eqm"/>
+                                            <outlet property="memberCountLbl" destination="0J0-lQ-kqq" id="5h9-B6-M7a"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -428,6 +468,9 @@
                         <viewLayoutGuide key="safeArea" id="O1u-W8-tvY"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Groups" image="groups-tabIcon" selectedImage="groups-tabIcon" id="cPa-gy-q4n"/>
+                    <connections>
+                        <outlet property="tableView" destination="jfV-Hg-Cb9" id="K1Z-cn-GfZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -555,10 +598,10 @@
                                                             </constraints>
                                                         </imageView>
                                                         <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="whiteCheckmark" translatesAutoresizingMaskIntoConstraints="NO" id="oux-gd-cq9">
-                                                            <rect key="frame" x="329" y="21" width="21" height="18"/>
+                                                            <rect key="frame" x="309" y="21" width="21" height="18"/>
                                                         </imageView>
                                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="user@gmail.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="uaA-Hj-2qu">
-                                                            <rect key="frame" x="62" y="19" width="251" height="21"/>
+                                                            <rect key="frame" x="62" y="19" width="231" height="21"/>
                                                             <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="16"/>
                                                             <color key="textColor" red="0.0" green="1" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                                             <nil key="highlightedColor"/>
